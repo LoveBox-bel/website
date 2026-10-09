@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Романтические подарки для девушки в Беларуси | Lovebox.bel</title>
+<meta name="description" content="Персональный романтический подарок для девушки — карта звёздного неба в день вашего знакомства и коробка с лепестками роз и гирляндой. Бесплатная доставка по Беларуси.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,400;9..144,500&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#f7efe4;--bg2:#eddcc8;--card:#fbf6ee;--ink:#2b1315;--ink2:#6b4a46;
+  --wine:#5a0f1c;--btn:#8c1d2f;--btn-h:#a32436;--gold:#b98a4e;--line:rgba(43,19,21,.14);
+  --serif:'Fraunces',Georgia,serif;--sans:'Manrope',system-ui,sans-serif;
+  box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px);
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#1c0e10;--bg2:#2a1417;--card:#251214;--ink:#f3e6d6;--ink2:#c9b2a0;--line:rgba(243,230,214,.16)}}
+:root[data-theme="dark"]{--bg:#1c0e10;--bg2:#2a1417;--card:#251214;--ink:#f3e6d6;--ink2:#c9b2a0;--line:rgba(243,230,214,.16)}
+html{scroll-behavior:smooth;scroll-padding-top:calc(72px + env(safe-area-inset-top,0px))}
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:var(--sans);background:var(--bg);color:var(--ink);-webkit-font-smoothing:antialiased;overflow-x:hidden;line-height:1.6}
+img{display:block;max-width:100%}a{color:inherit;text-decoration:none}
+.wrap{max-width:1120px;margin:0 auto;padding:0 22px}
+h1,h2,h3{font-family:var(--serif);font-weight:400;line-height:1.12}
+h2{font-size:clamp(28px,5vw,44px);max-width:17ch}
+.btn{display:inline-block;background:var(--btn);color:#fff6ea;padding:17px 30px;border-radius:2px;font-size:15px;font-weight:600;text-align:center;transition:background .25s}
+.btn:hover{background:var(--btn-h)}
+.btn-ghost{display:inline-block;border:1px solid rgba(255,246,234,.5);color:#fff6ea;padding:16px 28px;border-radius:2px;font-size:15px;text-align:center;transition:background .25s}
+.btn-ghost:hover{background:rgba(255,246,234,.12)}
+.sec{padding:84px 0}
+.lede{margin-top:16px;color:var(--ink2);max-width:46ch;font-size:16.5px}
+.ph{overflow:hidden;border-radius:2px;background:var(--bg2)}
+.ph img{width:100%;height:100%;object-fit:cover}
+
+/* header */
+header{position:fixed;top:0;left:0;right:0;z-index:50;padding-top:env(safe-area-inset-top,0px);background:rgba(28,10,12,.55);backdrop-filter:blur(12px);border-bottom:1px solid rgba(255,246,234,.12)}
+.nav{height:60px;display:flex;align-items:center;justify-content:space-between;color:#fff6ea}
+.logo{font-family:var(--serif);font-size:20px}
+.nav a.small{font-size:13px;font-weight:600;border:1px solid rgba(255,246,234,.5);padding:9px 18px;border-radius:2px}
+.nav-links{display:none;gap:30px;font-size:14px}
+@media(min-width:860px){.nav-links{display:flex}}
+
+/* hero */
+.hero{position:relative;min-height:100svh;display:flex;align-items:flex-end;color:#fff6ea;background:var(--wine)}
+.hero-photo{position:absolute;inset:0}
+.hero-photo img{width:100%;height:100%;object-fit:cover;object-position:50% 60%}
+.hero-photo::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(40,10,14,.35) 0%,rgba(40,10,14,.05) 30%,rgba(35,8,12,.88) 78%,rgba(30,6,10,.96) 100%)}
+.hero-in{position:relative;padding:130px 22px 44px;width:100%;max-width:1120px;margin:0 auto;animation:rise 1s ease both}
+@keyframes rise{from{opacity:0;transform:translateY(16px)}to{opacity:1;transform:none}}
+.hero h1{font-size:clamp(38px,9vw,72px);max-width:12ch}
+.hero p{margin-top:20px;max-width:40ch;font-size:16.5px;color:rgba(255,246,234,.86)}
+.hero-cta{display:flex;flex-direction:column;gap:12px;margin-top:30px;max-width:340px}
+.hero-meta{margin-top:26px;font-size:13.5px;color:rgba(255,246,234,.75)}
+@media(min-width:860px){
+  .hero-photo{left:46%}
+  .hero-photo::after{background:linear-gradient(90deg,var(--wine) 0%,rgba(90,15,28,.0) 30%)}
+  .hero-in{padding-bottom:80px}.hero-in>*{max-width:44%}
+  .hero-cta{flex-direction:row;max-width:none}
+}
+
+/* statement */
+.statement{background:var(--wine);color:#fff6ea;padding:100px 0;text-align:center}
+.statement p{font-family:var(--serif);font-size:clamp(28px,5.4vw,50px);line-height:1.2;max-width:19ch;margin:0 auto}
+.statement small{display:block;margin-top:24px;color:rgba(255,246,234,.65);font-size:15px}
+
+/* inside */
+.inside-grid{display:grid;gap:44px;margin-top:48px}
+.item .ph{aspect-ratio:4/3.4}
+.item h3{font-size:25px;margin:20px 0 8px}
+.item p{color:var(--ink2);max-width:42ch}
+@media(min-width:800px){.inside-grid{grid-template-columns:1fr 1fr;gap:56px}}
+
+/* sky */
+.sky{background:var(--bg2)}
+.sky-grid{display:grid;gap:40px;align-items:center}
+.sky .ph{aspect-ratio:4/4.4}
+.facts{margin-top:30px;display:grid;grid-template-columns:1fr 1fr;gap:20px 16px;border-top:1px solid var(--line);padding-top:24px}
+.facts span{display:block;font-size:12.5px;color:var(--ink2)}
+.facts b{font-family:var(--serif);font-weight:400;font-size:19px}
+.sample{margin-top:14px;font-size:12.5px;color:var(--ink2)}
+@media(min-width:860px){.sky-grid{grid-template-columns:1fr 1fr;gap:72px}}
+
+/* story */
+.story-grid{display:grid;gap:28px;margin-top:48px}
+.story-card .ph{aspect-ratio:3/3.6}
+.story-card h3{font-size:22px;margin:18px 0 6px}
+.story-card p{color:var(--ink2);max-width:40ch}
+@media(min-width:800px){.story-grid{grid-template-columns:1fr 1fr;gap:40px}}
+
+/* steps */
+.steps{margin-top:40px;display:grid;gap:0}
+.step{display:grid;grid-template-columns:56px 1fr;padding:24px 0;border-top:1px solid var(--line)}
+.step:last-child{border-bottom:1px solid var(--line)}
+.step i{font-style:normal;font-family:var(--serif);font-size:24px;color:var(--gold)}
+.step h3{font-size:20px;margin-bottom:4px}.step p{color:var(--ink2);max-width:46ch}
+
+/* trust */
+.trust{background:var(--bg2)}
+.trust-grid{display:grid;gap:14px;margin-top:36px}
+.trust-grid div{background:var(--card);padding:24px;border:1px solid var(--line);font-size:15.5px}
+.ph-note{margin-top:16px;border:1px dashed var(--line);padding:22px;text-align:center;font-size:13px;color:var(--ink2)}
+@media(min-width:760px){.trust-grid{grid-template-columns:1fr 1fr}}
+
+/* faq */
+details{border-top:1px solid var(--line)}details:last-child{border-bottom:1px solid var(--line)}
+summary{list-style:none;cursor:pointer;display:flex;justify-content:space-between;gap:20px;padding:22px 0;font-family:var(--serif);font-size:18px}
+summary::-webkit-details-marker{display:none}
+summary::after{content:"+";color:var(--gold);font-size:24px;line-height:1;transition:transform .25s}
+details[open] summary::after{transform:rotate(45deg)}
+details p{padding-bottom:22px;color:var(--ink2);max-width:54ch}
+
+/* final */
+.final{background:var(--wine);color:#fff6ea;text-align:center;padding:110px 0}
+.final h2{margin:0 auto;font-size:clamp(30px,5.6vw,50px);max-width:16ch}
+.final p{margin-top:16px;color:rgba(255,246,234,.72)}
+.final .btn{margin-top:32px;background:#f7efe4;color:var(--wine)}
+.final .btn:hover{background:#fff}
+footer{background:#2a0a10;color:rgba(255,246,234,.7);padding:48px 0 110px;font-size:14px}
+.foot{display:flex;flex-direction:column;gap:20px}
+.foot a{color:#fff6ea}.foot nav{display:flex;gap:22px;flex-wrap:wrap}
+.foot-logo{font-family:var(--serif);font-size:22px;color:#fff6ea}
+@media(min-width:760px){.foot{flex-direction:row;justify-content:space-between;align-items:center}}
+
+/* sticky */
+.sticky{position:fixed;left:0;right:0;bottom:0;z-index:60;display:flex;gap:12px;align-items:center;justify-content:space-between;padding:12px 16px calc(12px + env(safe-area-inset-bottom,0px));background:rgba(28,10,12,.92);backdrop-filter:blur(12px);transform:translateY(110%);transition:transform .35s}
+.sticky.show{transform:none}.sticky span{color:#fff6ea;font-size:13px;line-height:1.35}
+.sticky .btn{padding:13px 20px;font-size:14px;white-space:nowrap}
+@media(min-width:860px){.sticky{display:none}}
+:focus-visible{outline:2px solid var(--gold);outline-offset:3px}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important;scroll-behavior:auto!important}}
+
+.sky-ph{aspect-ratio:4/4.6}.sky-ph img{object-position:30% 58%}
+.sky .sample{text-align:left}
+.mosaic{display:grid;gap:16px;margin-top:40px}
+.mosaic .ph{aspect-ratio:4/5}
+@media(min-width:760px){.mosaic{grid-template-columns:1fr 1fr;gap:28px}.mosaic .m2{margin-top:64px}}
+.reviews{background:var(--bg2)}
+.rv-head{display:flex;justify-content:space-between;align-items:flex-end;gap:16px}
+.rv-arrows{display:none;gap:10px}
+.rv-arrows button{width:46px;height:46px;border:1px solid var(--line);border-radius:50%;font-size:18px;color:var(--ink);background:var(--card);cursor:pointer;transition:background .25s}
+.rv-arrows button:hover{background:var(--btn);color:#fff6ea}
+@media(min-width:860px){.rv-arrows{display:flex}}
+.rv{display:flex;gap:16px;overflow-x:auto;scroll-snap-type:x mandatory;margin:30px -22px 0;padding:4px 22px 18px;scrollbar-width:none;-webkit-overflow-scrolling:touch}
+.rv::-webkit-scrollbar{display:none}
+.rv figure{flex:0 0 min(82%,340px);scroll-snap-align:start;background:var(--card);border:1px solid var(--line);padding:28px 26px;display:flex;flex-direction:column;justify-content:space-between;gap:22px}
+.rv blockquote{font-family:var(--serif);font-size:18px;line-height:1.5}
+.rv figcaption{font-size:14px;font-weight:600;color:var(--btn)}
+.hero p{max-width:44ch}
+
+.sec{padding:52px 0}
+@media(min-width:860px){.sec{padding:76px 0}}
+.mosaic-sec{padding-top:0}
+.reviews+.trust{padding-top:8px}
+.statement{padding:72px 0}.final{padding:80px 0}
+.inside-grid{margin-top:32px;gap:36px}.story-grid{margin-top:28px}.mosaic{margin-top:28px}
+.sky-grid{gap:24px}.sample{margin-top:12px}
+.steps{margin-top:28px}.trust-grid{margin-top:28px}
+.final h2{max-width:22ch;text-wrap:balance}
+.final p{max-width:40ch;margin-left:auto;margin-right:auto;text-wrap:balance}
+@media(min-width:860px){.sky-grid{gap:64px}}
+</style>
+</head>
+<body>
+<header><div class="wrap nav">
+  <a href="#top" class="logo">Lovebox.bel</a>
+  <nav class="nav-links"><a href="#inside">Что внутри</a><a href="#sky">Звёздное небо</a><a href="#reviews">Отзывы</a><a href="#how">Как заказать</a><a href="#faq">Вопросы</a></nav>
+  <a class="small" href="https://ig.me/m/lovebox.bel" target="_blank" rel="noopener">Заказать</a>
+</div></header>
+
+<main id="top">
+<section class="hero" id="heroSec">
+  <div class="hero-photo"><img src="images/hero.jpg" alt="Рамка с картой звёздного неба и открытая коробка с лепестками роз и гирляндой на кровати в тёплом вечернем свете"></div>
+  <div class="hero-in">
+    <h1>Подарок, который она запомнит навсегда</h1>
+    <p>Карта звёздного неба в день и место вашего знакомства<br>Коробка с лепестками роз и гирляндой, которая превращает вручение в настоящий романтический вечер</p>
+    <div class="hero-cta">
+      <a class="btn" href="https://ig.me/m/lovebox.bel" target="_blank" rel="noopener">Хочу её удивить</a>
+      <a class="btn-ghost" href="#inside">Посмотреть, что внутри</a>
+    </div>
+    <div class="hero-meta">Бесплатная доставка по Беларуси</div>
+  </div>
+</section>
+
+<section class="statement"><div class="wrap">
+  <p>Небо вашего вечера она поставит на полку</p>
+  <small>А гирлянда и лепестки роз ещё долго будут создавать романтическую атмосферу в ваших вечерах</small>
+</div></section>
+
+<section class="sec" id="inside"><div class="wrap">
+  <h2>Что внутри Lovebox</h2>
+  <p class="lede">Подарок, который останется с ней и запомнится: она будет вспоминать этот момент и рассказывать подругам, какие эмоции вы ей подарили</p>
+  <div class="inside-grid">
+    <div class="item">
+      <div class="ph"><img loading="lazy" src="images/poster.jpg" alt="Чёрная рамка А4 с картой звёздного неба в форме сердца, датой и местом знакомства"></div>
+      <h3>Карта звёздного неба в рамке</h3>
+      <p>Небо над вами в день, час и месте вашего знакомства. На постере — дата, время, город и координаты. Формат А4, в рамке: можно сразу поставить на полку</p>
+    </div>
+    <div class="item">
+      <div class="ph"><img loading="lazy" src="images/box.jpg" alt="Открытая коробка с рамкой звёздного неба, лепестками роз и тёплой гирляндой за лёгкой шторой"></div>
+      <h3>Коробка с лепестками роз и гирляндой</h3>
+      <p>Она откроет крышку, и первое, что скажет — «вау». Внутри лепестки роз и тёплый свет гирлянды, которые сразу создают атмосферу вечера</p>
+    </div>
+  </div>
+</div></section>
+
+<section class="sec sky" id="sky"><div class="wrap sky-grid">
+  <div>
+    <h2>В тот вечер над вами было именно это небо</h2>
+    <p class="lede">Мы создаём карту звёздного неба на дату, время и место, где вы познакомились. Звёзды стоят так, как стояли в тот самый момент</p>
+  </div>
+  <div>
+    <div class="ph sky-ph"><img loading="lazy" src="images/sky.jpg" alt="Крупный план постера: сердце из звёзд и созвездий, надпись «Наша история началась именно под этим небом», дата, место и координаты"></div>
+    <p class="sample">Пример данных на макете. У вас будет ваша дата и ваше место</p>
+  </div>
+</div></section>
+
+<section class="sec"><div class="wrap">
+  <h2>Сначала момент, потом память</h2>
+  <div class="story-grid">
+    <div class="story-card">
+      <div class="ph"><img loading="lazy" src="images/moment.jpg" alt="Открытая коробка с лепестками роз и рамка со звёздной картой на кровати рядом со свечами"></div>
+      <h3>В момент, когда она откроет</h3>
+      <p>Гирлянда, лепестки роз и рамка с вашей датой скажут всё без лишних слов. Девушка будет в шоке от эмоций</p>
+    </div>
+    <div class="story-card">
+      <div class="ph"><img loading="lazy" src="images/shelf.jpg" alt="Рамка со звёздной картой на тумбочке рядом с вазой красных роз и свечой"></div>
+      <h3>А потом — на её полке</h3>
+      <p>Карта остаётся у неё на тумбочке, на полке или на стене и каждый раз напоминает о вашем вечере и о вашем незабываемом подарке</p>
+    </div>
+  </div>
+</div></section>
+
+<section class="sec mosaic-sec"><div class="wrap">
+  <h2>Красиво с первой секунды</h2>
+  <div class="mosaic">
+    <div class="ph"><img loading="lazy" src="images/closed.jpg" alt="Закрытая светлая коробка Lovebox с лепестками роз на кресле в мягком вечернем свете"></div>
+    <div class="ph m2"><img loading="lazy" src="images/car.jpg" alt="Открытая коробка Lovebox с рамкой звёздного неба, лепестками роз и гирляндой на сиденье автомобиля"></div>
+  </div>
+</div></section>
+
+<section class="sec reviews" id="reviews"><div class="wrap">
+  <h2>Что говорят те, кто уже подарил</h2>
+  <div class="rv-head"><p class="lede">Листайте, чтобы прочитать больше отзывов</p>
+    <div class="rv-arrows"><button id="rvPrev" aria-label="Назад">←</button><button id="rvNext" aria-label="Вперёд">→</button></div></div>
+  <div class="rv" id="rv" tabindex="0" aria-label="Отзывы клиентов">
+    <figure><blockquote>Это просто вау! Он такой красивый, даже лучше, чем я ожидала. Спасибо вам за такой подарок</blockquote><figcaption>Катерина</figcaption></figure>
+    <figure><blockquote>Забрал сегодня. Всё отлично, упаковано на уровне. Девушка была в шоке, это была лучшая реакция за последнее время</blockquote><figcaption>Артём</figcaption></figure>
+    <figure><blockquote>Подарок огонь. Она реально растрогалась, сказала, что это самый особенный подарок в её жизни. Спасибо!</blockquote><figcaption>Sergio</figcaption></figure>
+    <figure><blockquote>Получила сегодня! Это невероятно красиво, я даже не ожидала, что будет настолько атмосферно. Спасибо, что создаёте такие вещи</blockquote><figcaption>Настя</figcaption></figure>
+    <figure><blockquote>Она была в полном восторге. Сказала, что я очень постарался. Честно, сам не ожидал, что будет такой эффект. Спасибо!</blockquote><figcaption>Иван</figcaption></figure>
+    <figure><blockquote>Подарок просто топ. Качество на высоте, всё аккуратно, очень красиво. Она сказала, что это лучшее, что ей дарили. Спасибо вам!</blockquote><figcaption>Кирилл</figcaption></figure>
+    <figure><blockquote>Вот это я попал в точку. Она сначала просто улыбалась, а потом реально расплакалась. Сказала, что это самый романтичный подарок в её жизни</blockquote><figcaption>Roman_ak47</figcaption></figure>
+    <figure><blockquote>Она не могла поверить, что это реально наши звёзды. Сказала, что это очень мило и трогательно. Я тоже кайфанул, когда увидел её реакцию</blockquote><figcaption>leonid_23</figcaption></figure>
+    <figure><blockquote>Она просто замолчала, когда открыла коробку. Потом долго смотрела на рамку, а потом сказала, что это очень личный и особенный подарок</blockquote><figcaption>mellorrin</figcaption></figure>
+    <figure><blockquote>Очень красиво получилось! Качество на высоте, доставка быстрая. Девушка в полном восторге, говорит, что это очень личный и особенный подарок</blockquote><figcaption>kostya.s</figcaption></figure>
+    <figure><blockquote>Боялся, что не успею к дате, но всё пришло вовремя. Вживую выглядит ещё лучше, чем на фото. Девушка сказала, что это очень красиво и душевно</blockquote><figcaption>Roman S.</figcaption></figure>
+    <figure><blockquote>Уже второй раз заказываю у вас, и каждый раз — восторг! Качество, упаковка, эмоции — всё на высшем уровне. Спасибо большое!</blockquote><figcaption>Даша</figcaption></figure>
+  </div>
+</div></section>
+
+<section class="sec trust" id="how"><div class="wrap">
+  <h2>Как заказать</h2>
+  <div class="steps">
+    <div class="step"><i>1</i><div><h3>Пишете нам в Direct</h3><p>Называете дату, время и место, где вы познакомились</p></div></div>
+    <div class="step"><i>2</i><div><h3>Мы собираем ваш Lovebox</h3><p>Создаём карту неба именно для вашей пары и собираем коробку</p></div></div>
+    <div class="step"><i>3</i><div><h3>Доставляем бесплатно по Беларуси</h3><p>Вам остаётся только подарить и увидеть её реакцию</p></div></div>
+  </div>
+  <div class="trust-grid">
+    <div>Постер создаётся индивидуально под вашу дату и место</div>
+    <div>Не нужно придумывать подарок — мы уже собрали для вас лучший вариант</div>
+    <div>Бесплатная доставка по всей Беларуси</div>
+    <div>Отвечаем на вопросы в Instagram: @lovebox.bel</div>
+  </div>
+</div></section>
+
+<section class="sec" id="faq"><div class="wrap" style="max-width:780px">
+  <h2 style="margin-bottom:28px">Частые вопросы</h2>
+  <details><summary>Что входит в Lovebox?</summary><p>Карта звёздного неба в рамке (А4) и коробка с лепестками роз и гирляндой</p></details>
+  <details><summary>Какие данные нужны для карты неба?</summary><p>Дата, время и место, где вы познакомились. Остальное мы берём на себя</p></details>
+  <details><summary>Сколько времени занимает изготовление?</summary><p>Делаем в течение 12 часов и сразу отправляем. Доставка по всей Беларуси</p></details>
+  <details><summary>Сколько стоит доставка?</summary><p>Доставка по Беларуси бесплатная</p></details>
+  <details><summary>Для каких поводов подойдёт Lovebox?</summary><p>День рождения, 14 февраля, Новый год. Но большинство клиентов заказывают просто так — чтобы порадовать девушку неожиданным и крутым подарком</p></details>
+  <details><summary>Можно ли заказать срочно?</summary><p>Да. Напишите нам в Direct — обсудим сроки под вашу дату и ускоренный формат</p></details>
+</div></section>
+
+<section class="final"><div class="wrap">
+  <h2>Мы гарантируем: она на 100% будет в шоке от подарка</h2>
+  <p>Пишите нам — создадим подарок, который расскажет вашу историю</p>
+  <a class="btn" href="https://ig.me/m/lovebox.bel" target="_blank" rel="noopener">Написать в Direct</a>
+</div></section>
+</main>
+
+<footer><div class="wrap foot">
+  <div><div class="foot-logo">Lovebox.bel</div>Романтические подарки в Беларуси</div>
+</div></footer>
+
+<div class="sticky" id="sticky"><span>Бесплатная доставка<br>по Беларуси</span><a class="btn" href="https://ig.me/m/lovebox.bel" target="_blank" rel="noopener">Заказать Lovebox</a></div>
+<script>
+const s=document.getElementById('sticky');
+new IntersectionObserver(e=>s.classList.toggle('show',!e[0].isIntersecting),{threshold:0}).observe(document.getElementById('heroSec'));
+const rv=document.getElementById('rv'),step=()=>rv.clientWidth*0.8;
+document.getElementById('rvNext').onclick=()=>rv.scrollBy({left:step(),behavior:'smooth'});
+document.getElementById('rvPrev').onclick=()=>rv.scrollBy({left:-step(),behavior:'smooth'});
+</script>
+</body>
+</html>
